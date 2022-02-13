@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Verificando a Naturalidade</h1>
+    Digite o seu país de origem: <input type="text" name="país" id="país">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var país = window.document.querySelector('input#país').value
+            var res = window.document.querySelector('div#res')
+            if (país != `Brasil`) {
+                res.innerHTML = `<p>Você é <strong>estrangeiro</strong></p>`
+            } else {
+                res.innerHTML = `<p>Você é <strong>brasileiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

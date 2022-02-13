@@ -1,0 +1,251 @@
+:root {
+    --roxo: #5a2b5a;
+    --roxudo: #413041;
+    --roxao: #3a0c38;
+    --roxinho: #f8caf8;
+    --amarelinho: #ffff6d;
+    --amarelo: #fdfd90;
+    --vermelho: #ff4444;
+    --verde: #99f899;
+    --cinza: #afafaf;
+    --cinzaroxo: #574b57;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cinzaroxo);
+}
+
+footer {
+    background-color: var(--roxudo);
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.231);
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+main  {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--roxinho);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-bottom: 16px;
+    cursor: default;
+}
+
+#abrir_caixaInserir {
+    background-color: var(--roxao);
+    color: var(--roxinho);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    margin-left: 20px;
+    width: 180px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#abrir_caixaInserir:hover {
+    background-color: var(--roxo);
+    color: var(--roxinho);
+}
+
+#caixa_inserir {
+    display: none;
+    background-color: white;
+    width: 250px;
+    height: 170px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.678);
+    padding: 20px;
+    margin: 20px;
+}
+
+.inserir_disciplina {
+    display: block;
+    margin-top: 16px;
+}
+
+#fecharCaixaInserir {
+    margin-left: 130px;
+    margin-top: 23px;
+}
+
+#status {
+    background-color: var(--roxao);
+    width: 490px;
+    margin-left: 20px;
+    margin-top: 16px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.278);
+}
+
+#status > p {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: default;
+}
+
+#a-fazer {
+    color: var(--vermelho);
+}
+
+#fazendo {
+    color: var(--amarelo);
+}
+
+#quase-feito {
+    color: var(--verde);
+}
+
+#feito {
+    color: var(--cinza);
+}
+
+.caixa_disciplina {
+    background-color: var(--roxo);
+    display: inline-block;
+    width: 500px;
+    height: 520px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.678);
+}
+
+.titulo_disciplina {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    text-indent: 60px;
+    padding-bottom: 10px;
+    cursor: default;
+}
+
+.tarefa {
+    font-family: monospace;
+    font-size: 15px;
+    color: var(--roxinho);
+    display: inline-block;
+    width: 300px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tarefa:hover {
+    color: var(--roxao);
+}
+
+.label_dificuldade {
+    color: var(--roxao);
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 75px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: default;
+}
+
+.prazo {
+    text-align: center;
+    background-color: var(--amarelinho);
+    color: var(--roxao);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 130px;
+    cursor: text;
+}
+
+.dificuldade {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 60px;
+}
+
+.dificuldade:hover {
+    background-color: var(--roxao);
+}
+
+.label_nota {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--roxao);
+    margin-left: 90px;
+    cursor: default;
+}
+
+.nota {
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--roxinho);
+    color: var(--roxudo);
+    outline: none;
+    border-style: hidden;
+    border-radius: 5px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+.media {
+    font-family: monospace;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    cursor: default;
+}
+
+.situacao {
+    color: var(--roxao);
+    text-align: center;
+    cursor: default;
+}
+
+#div--fantasma {
+    background-color: var(--amarelinho);
+    display: none;
+    position: absolute;
+    width: 120px;
+    height: 165px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.349);
+    z-index: 1000;
+}
+
+#div--fantasma span {
+    position: relative;
+    cursor: pointer;
+    left: 103px;
+    top: 2px;
+}
+
+#div--fantasma p {
+    margin: 5px 0px;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+#div--fantasma p:hover {
+    background-color: var(--roxinho);
+}

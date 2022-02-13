@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tarefas.css">
+    <title>Tarefas</title>
+</head>
+<body>
+    <footer>
+        <h1>ATIVIDADES 2022.1</h1>
+
+        <button id="abrir_caixaInserir">Inserir Tarefa</button>
+
+        <div id="caixa_inserir">
+
+            <label for="inserir_disciplina">Disciplina</label>
+            <input type="text" id="inserir_disciplina" class="inputs_inserir" placeholder="Inserir disciplina...">
+            
+            <p>Tarefas</p>
+
+            <input type="checkbox" checked="checked" class="inputs_inserir" value="fta">
+            <label for="check_fta">FTA</label>
+
+            <input type="checkbox" class="inputs_inserir" value="a1">
+            <label for="check_a1">AIA (A1)</label>
+
+            <input type="checkbox" class="inputs_inserir" value="a2">
+            <label for="check_a2">AIA (A2)</label>
+
+            <button id="btn_inserir">Inserir</button>
+            <button id='fecharCaixaInserir'>Fechar</button>
+
+        </div>
+
+        <div id="status">
+            <p id="a-fazer">A FAZER (0)</p>
+            <p id="fazendo">FAZENDO (0)</p>
+            <p id="quase-feito">QUASE FEITO (0)</p>
+            <p id="feito">FEITO (0)</p>
+        </div>
+    </footer>
+    
+    <main id="corpo">
+        <!--<div id='cx1'class="caixa_disciplina">
+            <h2 class="titulo_disciplina">Disciplina</h2>
+            
+            <p class="tarefa">Fórum Temático Avaliativo (FTA)</p>
+            <input type="date" class="prazo">
+
+            <p class="label_dificuldade">Dificuldade</p>
+            <input type="text" class="dificuldade" value="Baixa">
+
+            <span class='label_nota'>Nota:</span>
+            <input type="number" class="nota">
+
+            <p class="tarefa">Atividade Individual Avaliativa (A1)</p>
+            <input type="date" class="prazo">
+
+            <p class="label_dificuldade">Dificuldade</p>
+            <input type="text" class="dificuldade" value="Baixa">
+
+            <span class="label_nota">Nota:</span>
+            <input type="number" class="nota">
+
+            <p class="tarefa">Atividade Individual Avaliativa (A2)</p>
+            <input type="date" class="prazo">
+
+            <p class="label_dificuldade">Dificuldade</p>
+            <input type="text" class="dificuldade" value="Baixa">
+
+            <span class="label_nota">Nota:</span>
+            <input type="number" class="nota">
+
+            <h2 class="media">Média Final: 10.0</h2>
+            <h2 class="situacao">CURSANDO</h2>
+        </div>-->
+    </main>
+
+    <div id="div--fantasma">
+       <span>x</span>
+       <p>A fazer</p>
+       <p>Fazendo</p>
+       <p>Quase feito</p>
+       <p>Feito</p>
+    </div>
+
+    <script src="tarefas.js"></script>
+</body>
+</html>
